@@ -3,7 +3,7 @@
 Maven是当前最受欢迎的Java项目管理构建自动化综合工具，类似Java以前的Ant、node.js中npm、.Net中的nuget、世上最好语言（PHP）中的Composer。
 
 Maven这个单词来自于犹太语，意为知识的积累。
-![MavenLogo](../../resources/images/maven/MavenLogo.png) 
+![MavenLogo](../../resources/images/maven/mavenLogo.png) 
 
 #### 2. Why
 1. 起初每个Java项目的目录结构都没有一个统一的标准，配置文件到处都是，单元测试代码应该放在哪里也没有一个权威。
@@ -44,7 +44,7 @@ Maven这个单词来自于犹太语，意为知识的积累。
 ##### 安装与配置 
 > 1. 官方下载安装包
 >> 浏览器中打开[下载地址](http://maven.apache.org/download.cgi) 
->> ![下载页面](../../resources/images/maven/MavenDownload.png)
+>> ![下载页面](../../resources/images/maven/mavenDownload.png)
 > 2. 配置环境变量
 >> <p style="color: red;">注意：安装maven之前，必须确保您已经安装了JDK</p>
 >> 假设我们在第一步下载了一个apache-maven-3.1.1-bin.zip文件，现在将其解压到D:/tools目录下，假设我们将解压后的目录重命名为maven，这样Maven的根目录就是D:/tools/maven了
