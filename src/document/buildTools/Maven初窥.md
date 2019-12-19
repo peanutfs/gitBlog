@@ -3,6 +3,7 @@
 Maven是当前最受欢迎的Java项目管理构建自动化综合工具，类似Java以前的Ant、node.js中npm、.Net中的nuget、世上最好语言（PHP）中的Composer。
 
 Maven这个单词来自于犹太语，意为知识的积累。
+
 ![MavenLogo](../../resources/images/maven/mavenLogo.png) 
 
 #### 2. Why
