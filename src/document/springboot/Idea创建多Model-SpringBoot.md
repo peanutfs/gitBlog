@@ -129,7 +129,7 @@
 >>````
 >>![pm-web依赖](../../resources/images/springboot/mavenDependency_3.png)
 >* pm-server下的pom文件增加
->>````xml
+>>```xml
 >><dependency>
 >>	<groupId>com.crossrainbow</groupId>
 >>	<artifactId>pm-common</artifactId>
