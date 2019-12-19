@@ -29,6 +29,7 @@
 >> 5. 确认Model信息后点击finish
 >> ![确认Model信息](../../resources/images/springboot/createModel_5.png)
 >> 完成之后的目录结构如下
+>> 
 >> ![完成目录结构](../../resources/images/springboot/createModel_6.png)
 
 > 按照上述五个步骤继续创建下一个Model，全部创建完成之后目录结构类似如下
