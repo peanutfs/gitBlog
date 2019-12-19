@@ -38,7 +38,7 @@
 #### 2.3 添加Model依赖
 1. 父工程的pom配置
 首先声明该父工程包含的子模块已经Springboot相关配置，下面展示一些通用配置，具体含义可以对照注释
-````xml
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -105,7 +105,7 @@
 > * pm-server依赖pm-common
 
 首先我们在三个model的pom文件中增加父工程配置
-````xml
+```xml
  <parent>
      <groupId>com.crossrainbow</groupId>
      <artifactId>purview-manage</artifactId>
@@ -117,7 +117,7 @@
 
 然后在web和server的pom文件新增依赖配置
 >* pm-web下的pom文件增加
->>````xml
+>>```xml
 >><dependency>
 >>	<groupId>com.crossrainbow</groupId>
 >>	<artifactId>pm-server</artifactId>
