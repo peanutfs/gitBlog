@@ -54,7 +54,8 @@ Maven这个单词来自于犹太语，意为知识的积累。
 >> * MAVEN_OPTS = -Xms128m -Xmx512m
 >> 以上M2_HOME是必须要配置的，如果想让Maven运行速度提升，可以根据情况来设置MAVEN_OPTS。
 >> 如果你完成了上述操作，打开cmd，输入：**mvn -v**，如果可以看到
->> ![版本信息](../../resources/images/maven/mavenVersion.png)恭喜您！ Maven安装成功！
+>> ![版本信息](../../resources/images/maven/mavenVersion.png)
+>>恭喜您！ Maven安装成功！
 > 3. 了解Maven仓库
 >> 使用Maven带来最直接的帮助就是jar包的统一管理，Maven将jar包统一管理在**本地仓库**中，位于C:/Users/{$你的用户名}/.m2 目录下（默认地址，可以通过setting.xml修改）。
 >> ![Maven仓库](../../resources/images/maven/mavenRepository.png)
