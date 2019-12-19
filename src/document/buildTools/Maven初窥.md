@@ -54,6 +54,7 @@ Maven这个单词来自于犹太语，意为知识的积累。
 >> * MAVEN_OPTS = -Xms128m -Xmx512m
 >> 以上M2_HOME是必须要配置的，如果想让Maven运行速度提升，可以根据情况来设置MAVEN_OPTS。
 >> 如果你完成了上述操作，打开cmd，输入：**mvn -v**，如果可以看到
+>>
 >> ![版本信息](../../resources/images/maven/mavenVersion.png) 
 >>恭喜您！ Maven安装成功！
 > 3. 了解Maven仓库
