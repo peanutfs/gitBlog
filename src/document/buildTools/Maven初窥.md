@@ -3,7 +3,6 @@
 Maven是当前最受欢迎的Java项目管理构建自动化综合工具，类似Java以前的Ant、node.js中npm、.Net中的nuget、世上最好语言（PHP）中的Composer。
 
 Maven这个单词来自于犹太语，意为知识的积累。
-
 ![MavenLogo](../../resources/images/maven/MavenLogo.png) 
 
 #### 2. Why
@@ -57,7 +56,7 @@ Maven这个单词来自于犹太语，意为知识的积累。
 >> ![版本信息](../../resources/images/maven/mavenVersion.png)恭喜您！ Maven安装成功！
 > 3. 了解Maven仓库
 >> 使用Maven带来最直接的帮助就是jar包的统一管理，Maven将jar包统一管理在**本地仓库**中，位于C:/Users/{$你的用户名}/.m2 目录下（默认地址，可以通过setting.xml修改）。
->> ![Maven仓库](../../resources/images/mavenRepository.png)
+>> ![Maven仓库](../../resources/images/maven/mavenRepository.png)
 >> 实际上可以将本地仓库理解为“缓存”，项目首先会从本地仓库中获取jar包，当无法获取指定jar包是，本地仓库会从**远程仓库（或中央仓库）**中去下载jar包，并放入本地仓库中以备将来使用。这个远程仓库是Maven官方提供的，这样一来本地仓库会随着项目的积累越来越大。可以通过上面的简易图理解项目、本地仓库、远程仓库之间的关系。
 >4. setting.xml配置
 >> 在D:/tools/maven/conf 目录下的setting.xml负责Maven的相关配置
