@@ -10,6 +10,7 @@
 
 ##3.集合结构
 ![简易框架](../../resources/images/collection/collection_root.jpg)
+图片来源:https://www.cnblogs.com/TestMa/p/10641367.html
 集合宏观分类分为**Collection**和**Map**
 
 1. Collection是一个接口，是高度抽象出来的集合，包含了集合的基本操作和属性。Collection包含两个主要的字接口**List**和**Set**
@@ -22,7 +23,7 @@ Collection常用方法
 ![Collection常用方法](../../resources/images/collection/collection_method.png)
 
 ####3.1.1 List集合
-List集合代表一个**有序**且**元素可重复**的集合，集合的每个元素都有其对应的顺序索引。默认按照元素的添加顺序设置元素的索引，可以通过索引（类似于数字下标）来访问指定位置的集合元素。
+List集合代表一个**有序**且**元素可重复**的集合，集合的每个元素都有其对应的顺序索引。默认按照元素的添加顺序设置元素的索引，可以通过索引（类似于数组下标）来访问指定位置的集合元素。
 实现List接口的集合主要有：**ArrayList**，**LinkedList**，**Vector**，Stack
 **1. ArrayList**
 ArrayList是一个***动态数组***，它允许任何符合规则的元素插入（包括null）。每个ArrayList都有一个初始容量（10），该容量代表了容器的大小。随着容器中的元素增加，容器的大小也会随着增加，每次向容器增加元素时同时会进行容量检查，当快溢出时，就会进行扩容操作。因此如果我们明确所插入的元素数量，最好指定一个初始容量值，避免过多的扩容操作带来的性能问题。
@@ -158,4 +159,4 @@ TreeMap取出来的是排序后的键值对。如果要按自然顺序或自定�
 LinkedHashMap 是HashMap的一个子类，如果需要输出的顺序和输入的相同，那么用LinkedHashMap可以实现，它还可以按读取顺序来排列，像连接池中可以应用。 
 
 ![集合异同点](../../resources/images/collection/collection_diff.jpeg)
-
+[图片来源]https://baijiahao.baidu.com/s?id=1635960586900914735&wfr=spider&for=pc
