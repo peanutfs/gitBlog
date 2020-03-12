@@ -65,7 +65,6 @@
 			扩容后将每一个bucket移动到新的bucket当中
 	</div>
 </details>
-
 5. HashMap是怎么解决哈希冲突的？
 <details>
 	<summary>查看答案</summary>
@@ -82,16 +81,30 @@
 <details>
 
 6. HashMap为什么不直接使用hashCode()处理后的哈希值直接作为table下标？
+<details>
+	<summary>查看答案</summary>
+	<div>
+		<p>
+			hashcode()返回的是int整型，取值范围为-(2^31)~(2^31-1)，约40亿的空间，而HashMap的容量范围的是16~2^30， HashMap通常情况下是取不到最大值，并且设备也很难提供这么多存储空间，从而导致hashcode()计算出的hash值可能不在数组大小范围内，导致无法匹配存储位置
+		<p>
+		<p>如何解决?</p>
+		<p>HashMap实现了自己的hash()方法，通过两次扰动使得它自己的哈希值高低位自行进行异或运算，降低了哈希碰撞概率也使得数据分布更均匀</p>
+		<p>在保证数组长度是2的幂次方的时候，使用hash()运算的值与(数组长度-1)进行&amp;运算，从而比取余更加有效率</p>
+		<p>为什么数组长度要保证为2的幂次方呢？</p>
+		<p>只有当数组长度是2的幂次方，h&amp;(length-1)才等价于h%length，既实现了key的定位，又减少了冲突次数，并且提高了效率</p>
+		<p>如果length为2的幂次方，则length-1转化成二进制一定是1111....形式，如果length不是2的幂次方，比如15，则length-1为14，对应二进制位1110，则会造成冲突概率增加，造成资源浪费</p>
+		<p>为什么是两次扰动</p>
+		<p>为了加大哈希值低位的随机性，使分布更均匀，两次就够了，已经达到了高地位参与运算的目的</p>
+	</div>
+</details>
 
 7. HashMap在JDK1.7和JDK1.8中有哪些不同？
 
-8. 为什么HashMap中String，Integer这样的包装类适合作为Key？
 
-9. ConcurrentHashMap和Hashtable的区别？
-
-10. Java集合的快速失败机制"fail-fast"？
-
-11. ArrayList和Vector区别？
+9. 为什么HashMap中String，Integer这样的包装类适合作为Key？
+10. ConcurrentHashMap和Hashtable的区别？
+11. Java集合的快速失败机制"fail-fast"？
+12. ArrayList和Vector区别？
 <details>
 	<summary>查看答案</summary>
 	<div>
